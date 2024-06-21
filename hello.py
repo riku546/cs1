@@ -42,17 +42,19 @@
 #         elif self.area <= val:
 #             return f"<= {val}" 
 
-import numpy as np
 
 
-class Point:
-    def __init__(self , x , y) -> None:
-        self.x = x
-        self.y = y
+# import numpy as np
+
+
+# class Point:
+#     def __init__(self , x , y) -> None:
+#         self.x = x
+#         self.y = y
         
 
-    def distance(self ,object):
-        p  = np.array([self.x , self.y])
-        q = np.array([object.x , object.y])
-        return np.linalg.norm(p - q)
+#     def distance(self ,object):
+#         p  = np.array([self.x , self.y])
+#         q = np.array([object.x , object.y])
+#         return np.linalg.norm(p - q)
 
