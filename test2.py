@@ -81,3 +81,17 @@
 
 # print(us_to_bk(s))
 
+import re
+
+
+def to_minutes(t1 , t2):
+    hour ,  minutes = re.split(':' , t1)
+    hour2 , minutes2  = re.split(':' , t2)
+
+    result_hour = int(hour2) - int(hour)
+    result_minutes = int(minutes2) - int(minutes)
+
+    return  (result_hour * 60 ) + result_minutes
+
+
+print(to_minutes("1:30" , "6:30"))
