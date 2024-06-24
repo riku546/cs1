@@ -51,3 +51,33 @@
 
 # mult_table()
 
+# def formatter(value):
+#     count = 0
+#     for i in range(len(str(value)) , -1 , -1):
+#         count +=1
+#         if(count % 3 == 0):
+
+
+
+# formatter(1234567)
+
+
+# import re
+
+
+# s = "ret"
+
+# if re.fullmatch('[A-Za-z]+',s):
+#     print("error")
+
+
+
+# import re 
+# s = "1/4/2017"
+# def us_to_bk(date):
+
+#     date , month  , year= re.split('/' , s)
+#     return f"{month}/{date}/{year}"
+
+# print(us_to_bk(s))
+
