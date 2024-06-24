@@ -51,15 +51,27 @@
 
 # mult_table()
 
-# def formatter(value):
-#     count = 0
-#     for i in range(len(str(value)) , -1 , -1):
-#         count +=1
-#         if(count % 3 == 0):
+def formatter(value):
+    count = 0
+    result_list = []
+    result_string = ""
+    str_value = str(value)
+    
+    for i in range(len(str_value) , 0 , -1):
+        count +=1
+        result_list.append(str_value[i - 1])
+        if(count == 3):
+            result_list.append(",")
+            count = 0
+    print(result_list)            
+
+    for s in range(len(result_list) -1 , -1 , -1):
+        result_string += result_list[s]
+
+    return result_string
 
 
-
-# formatter(1234567)
+print(formatter(1234567))
 
 
 # import re
@@ -81,17 +93,24 @@
 
 # print(us_to_bk(s))
 
-import re
+# import re
 
 
-def to_minutes(t1 , t2):
-    hour ,  minutes = re.split(':' , t1)
-    hour2 , minutes2  = re.split(':' , t2)
+# def to_minutes(t1 , t2):
+#     hour ,  minutes = re.split(':' , t1)
+#     hour2 , minutes2  = re.split(':' , t2)
 
-    result_hour = int(hour2) - int(hour)
-    result_minutes = int(minutes2) - int(minutes)
+#     result_hour = int(hour2) - int(hour)
+#     result_minutes = int(minutes2) - int(minutes)
 
-    return  (result_hour * 60 ) + result_minutes
+#     return  (result_hour * 60 ) + result_minutes
 
 
-print(to_minutes("1:30" , "6:30"))
+# print(to_minutes("1:30" , "6:30"))
+
+
+# number = 1234567890
+# formatted_number = "{:,}".format(number)
+# print(formatted_number)
+
+
