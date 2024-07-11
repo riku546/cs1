@@ -1,6 +1,6 @@
 // Sample 1-1
 function showDialogTimeout() {
-  alert('Hello');
+  alert("Hello");
 }
 
 let timeoutId;
@@ -16,7 +16,7 @@ function stopTimeout() {
 let cnt;
 function updateContentInterval() {
   cnt++;
-  let element = document.getElementById('count');
+  let element = document.getElementById("count");
   element.textContent = String(cnt);
 }
 
@@ -28,4 +28,19 @@ function startInterval() {
 
 function stopInterval() {
   clearInterval(intervalId);
+}
+
+//formのinput
+const amount = document.querySelector("#amount");
+const taxRate = document.querySelector("#taxRate");
+
+//calculateの結果を表示するもの
+const totalAmount = document.querySelector("#totalAmout");
+const taxAmount = document.querySelector("#taxAmount");
+
+//金額の計算をして、htmlに反映
+function calculate() {
+  const result = amount.value * tax.value;
+  totalAmount.textContent = result;
+  taxAmount.textContent = taxRate;
 }

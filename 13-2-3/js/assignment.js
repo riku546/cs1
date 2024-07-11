@@ -7,6 +7,7 @@ const count = document.querySelector("#message");
 let time = 0;
 
 function startNoodle() {
+  
   if (time > 0) return;
 
   //タイマー処理
