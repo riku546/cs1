@@ -28,6 +28,7 @@ async function findWeather() {
 }
 
 //apiを叩いて、天気の情報を取得する
+//取得した天気情報をhtmlに反映させる
 async function set_weather_info(currentLatitude, currentLongtitude) {
   //経度と緯度・apiKeyをurlにセットする
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${currentLatitude}&lon=${currentLongtitude}&appid=${API_KEY_WEATHER}`;
