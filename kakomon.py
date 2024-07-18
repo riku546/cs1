@@ -33,3 +33,44 @@
 # print(gt10([15, 7, 6, 21]))
 # print(gt10([7, 11, 32]))
 # print(gt10([16, 24, 22]))
+
+
+
+# class Counter:
+#   def __init__(self , n):
+#     self.count = n
+
+#   def increment(self):
+#     self.count += 1
+  
+#   def reset(self):
+#     self.count = 0
+
+
+# c1 = Counter(5)
+
+# for _ in range(3):
+#     c1.increment()
+#     print(c1.count)
+
+# c1.reset()
+# print(c1.count)
+
+# import re
+
+# def cont(s):
+#   if re.search( "\d{3}" , s):
+#     return True
+#   return False
+
+
+# s1 = "abc54abc"
+# s2 = "abc861xyz"   # "861" の部分が該当
+# s3 = "abc92def85477xyz"   # "85477" の部分が該当
+# s4 = "abc15def41gh7"
+
+# print(cont(s1))
+# print(cont(s2))
+# print(cont(s3))
+# r = cont(s4)
+# print(r)
