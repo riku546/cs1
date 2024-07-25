@@ -1,0 +1,26 @@
+h1 {
+    color: #138FD4;
+    background-color: #EEEEEE;
+    border-bottom: #B2D9F5 1px solid;
+    padding: 10px 10px 10px 10px;
+}
+
+h2 {
+    color: #138FD4;
+    【  H  】: #B2D9F5 1px solid;
+    margin: 0px 0px 10px 0px;
+    padding: 5px 10px 5px 10px; 
+}
+
+#main {
+    border: #B2D9F5 2px solid;
+    padding: 10px 10px 10px 10px;
+}
+
+【  I  】 {
+    color: #FF0000;
+}
+
+【  J  】 {
+    color: #0000FF;
+}
