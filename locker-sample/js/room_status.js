@@ -1,7 +1,6 @@
 let BASE_URL = "https://edu-iot.iniad.org/api/v1";
 
 function displayRoomStatus(result) {
-  console.log(result);
   //結果を表示するdom
   const resultStatus = document.getElementById("monitoring-result")
   const roomTemp = document.getElementById("room-temperature");
@@ -24,5 +23,6 @@ function getRoomStatus() {
   let roomNum = document.getElementById("room-number").value;
 
   let url = `https://edu-iot.iniad.org/api/v1/sensors/${roomNum}`;
+  
   callRoomStatusAPI(url, "GET", userid, userpw, displayRoomStatus);
 }
